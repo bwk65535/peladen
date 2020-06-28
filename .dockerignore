@@ -12,3 +12,4 @@ vendor/
 .gitignore
 .dockerignore
 .git/
+docker-compose.yml
