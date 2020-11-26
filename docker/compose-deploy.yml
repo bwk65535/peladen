@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  jekyll:
+    build:
+      context: ../.
+      dockerfile: docker/Dockerfile
+    environment:
+      DOCKER_BUILDKIT: 1
+    image: peladen-blog:latest
+    networks:
+      - peladen-net
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+networks:
+  peladen-net:

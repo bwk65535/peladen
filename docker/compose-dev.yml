@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  jekyll:
+    entrypoint: cat
+    image: jekyll/jekyll:4.1.0
+    network_mode: "host"
+    volumes:
+      - $PWD:/app
+      - $PWD/vendor/bundle:/usr/local/bundle
+      - $PWD/vendor/gems:/usr/gem
+    tty: true
+    user: jekyll
+    working_dir: /app
