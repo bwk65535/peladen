@@ -47,6 +47,3 @@ Physical console dapat digunakan dengan display monitor dan keyboard yang dicolo
 Di dalam physical console pada sistem linux, terdapat beberapa virtual console yang menjalankan terminal terpisah di dalamnya. Jika kita login di salah satu virtual console tersebut, itu merupakan sesi terminal sendiri dan terpisah dengan sesi terminal di virtual console yang lain.
 
 Virtual console dapat diakses dengan shortcut Ctrl+Alt+F1 sampai F6. Secara default pada Centos 8, login screen untuk *graphical environment* (jika ada) dapat diakses di virtual console pertama. Jika sudah login, *graphical session* kita akan dijalankan di virtual console berikutnya yang masih kosong. Sedangkan virtual console pertama tetap menjalankan login screen. Ini berbeda pada Centos 6 dan 7 dimana graphical session kita akan tetap berada di virtual console pertama.
-
-# Headless server
-Umumnya server yang dijalankan untuk di data center tidak memiliki display monitor dan keyboard yang terhubung ke server tersebut. Untuk me-manage server, biasanya sysadmin akan terhubung melalui jaringan ke server tersebut dengan protokol SSH atau me-remote server tersebut via koneksi serial yang terhubung ke *console server* sebagai *out-of-band management*.
