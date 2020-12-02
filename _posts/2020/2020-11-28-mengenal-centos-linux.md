@@ -10,7 +10,7 @@ Centos adalah distro linux free yang disupport oleh komunitas dan merupakan turu
 
 ![Centos logo](/assets/images/2020/320px-Centos-logo-light.png "Centos logo")
 
-# Centos Stream
+## Centos Stream
 Di versi Centos 8 sekarang ini, Centos juga mengeluarkan distro rolling-release yang bersumber dari Fedora. Rolling release maksudnya suatu software dikembangkan secara continuous berupa update yang kecil dan sering tanpa adanya point release terjadwal seperti pengembangan software pada umumnya.
 
 Centos Stream berada di antara Fedora dan RHEL dan dapat berfungsi sebagai tempat pengembangan dan pengetesan minor release RHEL selanjutnya.

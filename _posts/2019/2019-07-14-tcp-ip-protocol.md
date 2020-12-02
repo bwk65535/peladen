@@ -10,19 +10,19 @@ Nama TCP/IP diambil berdasarkan protokol yang paling populer di dalamnya, yaitu 
 
 ![TCP/IP Layer](/assets/images/2019/tcpip-vs-osi.png "TCP/IP Layer")
 
-# TCP dan UDP
+## TCP dan UDP
 Pada jaringan TCP/IP, kita mempunyai 2 transport protocol utama :
 1. TCP (Transmission Control Protocol)<br>
 TCP adalah protokol yang bersifat connection-oriented, dideskripsikan dalan RFC 793. TCP membutuhkan overhead yang lebih dalam pengiriman data karena adanya fungsi-fungsi reliable delivery yang berarti data yang dikirim akan diperiksa apakah sampai ke tempat tujuan atau tidak, flow control yang dapat mengatur banyaknya data yang dapat dikirim dan diterima, error correction, dll. Contoh penggunaan : Web browser, e-mail, file transfer, dll.
 2. UDP (User Datagram Protocol)<br>
 UDP merupakan protokol yang simple, bersifat connectionless, dan dideskripsikan di RFC 768. UDP mempunyai keunggulan pada overhead pengiriman data yang rendah. Bentuk data dalam komunikasi UDP disebut datagrams. Datagram yang dikirimkan bersifat "best-effort" yang berarti dalam pengiriman data tersebut tidak ada mekanisme untuk mengetahui apakah data berhasil sampai pada tujuannya atau tidak, sehingga datagram dapat diproses lebih cepat oleh aplikasi. Contoh penggunaan : DNS, Video Streaming, VoIP, Game Online, dll.
        
-# TCP 3-way handshake
+## TCP 3-way handshake
 Pada saat komputer akan mengirim data menggunakan TCP, TCP akan membangun koneksi terlebih dahulu dengan komputer tujuan sebelum dilakukan pengiriman data. Proses membangun koneksi ini disebut tcp 3-way handshake.
 
 ![TCP 3-way handshake](/assets/images/2019/tcp-3-way-handshake.png "TCP 3-way handshake")
 
-# Port Number
+## Port Number
 TCP dan UDP menggunakan alamat port untuk menghubungkan aplikasi dengan jaringan. Pada setiap data yang dikirimkan akan diberikan alamat port pengirim/sumber dan alamat port penerima/tujuan.
 Internet Assigned Numbers Authority (IANA) merupakan badan yang berwenang untuk mengalokasikan port numbers. Ada beberapa macam tipe dari port numbers :
 - Well Known Port (0-1023)<br>

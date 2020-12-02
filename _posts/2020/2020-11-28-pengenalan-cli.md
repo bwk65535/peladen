@@ -11,7 +11,7 @@ Walaupun ada juga interface berbentuk grafis (Graphical User Interface), interfa
 - meminimalkan celah keamanan pada server yang mungkin ada pada interface grafis.
 - dll.
 
-# Pengenalan Shell
+## Pengenalan Shell
 CLI di linux disediakan oleh program atau command line interpreter yang bernama *shell*. Ada banyak shell yang dikembangkan dan digunakan pada sistem linux. Salah satu shell yang saat ini banyak digunakan adalah Bourne-Again Shell (Bash Shell) yang merupakan pengembangan dari Bourne Shell (sh)
 
 Ketika kita memulai shell, maka akan muncul prompt seperti berikut:
@@ -26,7 +26,7 @@ Tanda $ merupakan *shell prompt*, tempat di mana perintah atau command dapat kit
 
 Selain dapat digunakan secara interaktif, kita juga dapat menjalankan command menggunakan script yang dijalankan oleh shell tersebut. Hal ini berguna untuk mengotomasi instalasi atau konfigurasi pada server. Selain itu, shell scripting juga dapat digunakan untuk memonitor server dan alerting.
 
-# Menggunakan shell
+## Menggunakan shell
 Suatu perintah atau *Command* yang dijalankan pada shell biasanya terdiri dari 3 bagian:
 - Command: perintah atau program yang akan dijalankan.
 - Options: opsi-opsi untuk merubah *behaviour* suatu command.
@@ -39,7 +39,7 @@ Contoh:
 - option `-l` untuk menampilkan output secara long listing
 - argument `/home` sebagai direktori target yang akan di-list
 
-# Console
+## Console
 Tempat kita menjalankan shell disebut dengan *terminal*. Untuk mengakses terminal, kita dapat menggunakan *physical console* atau *virtual console*.
 
 Physical console dapat digunakan dengan display monitor dan keyboard yang dicolok langsung ke server. Atau dapat juga melalui serial port server tersebut yang diakses dari perangkat lain.

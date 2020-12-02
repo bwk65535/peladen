@@ -4,13 +4,13 @@ title:  "Login Menggunakan SSH"
 categories: server
 ---
 
-# Headless server
+## Headless server
 Umumnya server yang dijalankan untuk di data center tidak memiliki display monitor dan keyboard yang terhubung ke server tersebut. Untuk me-manage server, biasanya sysadmin akan terhubung melalui jaringan ke server tersebut dengan protokol SSH atau me-remote server tersebut via koneksi serial yang terhubung ke *console server* sebagai *out-of-band management*.
 
-# Minimal installation
+## Minimal installation
 Selain itu, seperti yang sudah diketahui, server linux biasanya tidak menginstall *graphical environment* atau GUI untuk menghemat penggunaan resource pada server. Server biasanya hanya diinstall software dan utilitas yang memang penting untuk digunakan, atau biasa disebut minimal install. Karena tidak ada GUI, mau tidak mau kita harus me-manage server tersebut melalui terminal yang bisa diakses secara remote.
 
-# SSH Login
+## SSH Login
 Di linux, metode remote login yang paling umum adalah menggunakan SSH. Singkatnya ssh merupakan protokol yang digunakan untuk mengoperasikan layanan jaringan secara terenkripsi, sehingga kerahasiaan dan integritas data yang melewati jaringan dapat dijamin.
 
 Untuk terhubung ke server melalui ssh, cukup menggunakan command berikut:
@@ -19,7 +19,7 @@ Untuk terhubung ke server melalui ssh, cukup menggunakan command berikut:
 
 Ketika sudah terkoneksi, server akan meminta password user (jika ada) sebelum kita masuk ke server tersebut. Jika kita tidak menggunakan `user`, maka ssh akan menggunakan user kita yang sedang login. Untuk `alamat_server` dapat menggunakan ip address atau hostname asal hostname tersebut dapat di-*resolve* menjadi ip address.
 
-# Public Key Authentication
+## Public Key Authentication
 Selain login dengan password, kita juga bisa login menggunakan *ssh keypair*. Beberapa penyedia public cloud mengharuskan kita untuk login ssh menggunakan metode ini. Selain itu, untuk kebutuhan scripting dan otomasi sering kali mengharuskan kita untuk bisa login ke suatu server tanpa harus mengetikkan password secara manual.
 
 Kita harus membuat terlebih dahulu pasangan public dan private key yang akan digunakan.
@@ -69,7 +69,7 @@ Setelah ini, kita dapat melakukan ssh tanpa login kembali. Bisa dengan command s
 
 `$ ssh -i .ssh/id_rsa centos@192.168.121.65`
 
-# SSH Known Host
+## SSH Known Host
 Ketika pertama kali kita terhubung ke ssh server, mesin yang menjadi ssh server akan mengirimkan public ssh host key yang dimilikinya ke mesin ssh client. Host key ini berfungsi untuk authentikasi dan untuk membangun koneksi terenkripsi. Sama seperti ssh key yang kita gunakan untuk pubkey authentication, host key ini juga berupa keypair public dan private key. 
 
 Public key yang dikirim ke client akan dimasukkan ke file `known_host` di sisi client seperti contoh di bawah:

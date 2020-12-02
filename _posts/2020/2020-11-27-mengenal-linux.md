@@ -4,7 +4,7 @@ title:  "Mengenal Linux"
 categories: server
 ---
 
-# Linux
+## Linux
 Linux merupakan sebuah kernel unix-like open source yang dibuat oleh Linus Torvald pada tahun 1991. Biasanya linux dipaketkan dengan beberapa utilitas lain sehingga menjadi sistem operasi yang lengkap. Linux yang telah dipaketkan tersebut disebut dengan linux distribution (distro). Ada banyak linux distro yang banyak dipakai saat ini, seperti red hat, centos, fedora, debian, ubuntu, dll. Masing-masing linux distro memiliki karakteristik tersendiri sesuai dengan tujuan dan ide awal distro tersebut dibuat.
 
 Umumnya, distro linux yang baik memiliki beberapa kapabilitas berikut:
@@ -18,7 +18,7 @@ Beberapa kelebihan sistem operasi Linux:
 - Linux memiliki command line interface yang powefull dan bisa melakukan scripting untuk otomasi.
 - Linux merupakan sistem operasi modular, yang komponen didalamnya dapat ditambah atau dikurangi sesuai kebutuhan.
 
-# Open Source
+## Open Source
 Software open source adalah sofware dengan kode sumber (source code) terbuka yang dapat diakses, dimodifikasi, dan didistribusikan kembali secara bebas. Sebaliknya pada software closed source, pengguna hanya dapat menggunakan program tersebut saja, tanpa dapat melihat source code dibaliknya.
 
 Beberapa kelebihan software open source:
