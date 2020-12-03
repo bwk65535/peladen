@@ -9,4 +9,4 @@ RUN set -eux \
   && bundle exec jekyll build --trace
 
 FROM nginx:alpine
-COPY --from=builder /var/jekyll/_site /usr/share/nginx/html
+COPY --from=builder /srv/jekyll/_site /usr/share/nginx/html

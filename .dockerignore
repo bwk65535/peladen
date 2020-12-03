@@ -12,4 +12,5 @@ vendor/
 .gitignore
 .dockerignore
 .git/
+.github/
 docker/
