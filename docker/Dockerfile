@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:4.1.0 as builder
+FROM jekyll/jekyll:latest
 
 COPY Gemfile Gemfile.lock ./
 RUN set -eux \
@@ -6,7 +6,7 @@ RUN set -eux \
 
 COPY . .
 RUN set -eux \
-  && bundle exec jekyll build --trace
+  && bundle exec jekyll build
 
 FROM nginx:alpine
-COPY --from=builder /srv/jekyll/_site /usr/share/nginx/html
+COPY --from=0 /srv/jekyll/_site /usr/share/nginx/html

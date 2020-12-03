@@ -4,14 +4,11 @@ services:
     build:
       context: ../.
       dockerfile: docker/Dockerfile
-    environment:
-      DOCKER_BUILDKIT: 1
-    image: peladen-blog:latest
+    image: v0latile/peladen:latest
     networks:
       - peladen-net
     ports:
       - "8080:80"
-    restart: unless-stopped
 
 networks:
   peladen-net:

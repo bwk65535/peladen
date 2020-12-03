@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56c706bd-59f8-4184-81d9-fa86a3a30b1d/deploy-status)](https://app.netlify.com/sites/peladen/deploys)
+
 # peladen
 personal blog
 
