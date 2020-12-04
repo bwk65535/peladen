@@ -1,14 +1,13 @@
 version: "3.8"
 services:
   jekyll:
-    # entrypoint: bundle exec jekyll serve --trace
-    entrypoint: cat
+    entrypoint: bundle exec jekyll serve --trace
     image: jekyll/jekyll:latest
     network_mode: "host"
     volumes:
       - $PWD:/app
       - $PWD/vendor/bundle:/usr/local/bundle
       - $PWD/vendor/gems:/usr/gem
-    tty: true
+    # tty: true
     user: jekyll
     working_dir: /app
