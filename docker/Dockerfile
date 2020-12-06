@@ -1,4 +1,8 @@
-FROM jekyll/jekyll:latest
+FROM ruby:2.7.2-alpine3.12 AS builder
+
+WORKDIR /app
+RUN set -eux \
+  && apk add -U gcc make ruby-dev build-base
 
 COPY Gemfile Gemfile.lock ./
 RUN set -eux \
@@ -9,4 +13,4 @@ RUN set -eux \
   && bundle exec jekyll build
 
 FROM nginx:alpine
-COPY --from=0 /srv/jekyll/_site /usr/share/nginx/html
+COPY --from=builder /app/_site /usr/share/nginx/html
