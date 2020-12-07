@@ -7,7 +7,8 @@ categories: server
 ## Pendahuluan
 Menyambung tulisan tentang share folder dari windows  ke ubuntu, berikutnya kita coba share folder dari windows 10 host ke centos 8 guest. Centos 8 yang diinstall adalah versi minimal yang tanpa GUI.
 Berikut langkah-langkahnya.
-Prasyarat
+
+## Prasyarat
 - Virtualbox yang telah terinstall di Windows 10 beserta extension pack.
 - Centos 8 minimal yang telah terinstall di Virtualbox.
 
