@@ -15,23 +15,23 @@ Share folder dari windows 10 ke ubuntu desktop dengan GUI relatif mudah dilakuka
 - Masuk ke settings
 - Klik tab “Shared Folders”
 
-    ![share-folder-ubuntu-1](/assets/images/2020/share-folder-ubuntu-1.png "share-folder-ubuntu-1")
+    ![share-folder-ubuntu-1](/assets/images/2020/10/share-folder-ubuntu-1.png "share-folder-ubuntu-1")
 
 - Klik “Adds new shared folder” di sebelah kanan
 
-    ![share-folder-ubuntu-2](/assets/images/2020/share-folder-ubuntu-2.png "share-folder-ubuntu-2")
+    ![share-folder-ubuntu-2](/assets/images/2020/10/share-folder-ubuntu-2.png "share-folder-ubuntu-2")
 
 - Pilih folder di host yang akan di share pada bagian “Folder Path”. Isi nama share pada “Folder Name”. Klik OK.
 
-    ![share-folder-ubuntu-3](/assets/images/2020/share-folder-ubuntu-3.png "share-folder-ubuntu-3")
+    ![share-folder-ubuntu-3](/assets/images/2020/10/share-folder-ubuntu-3.png "share-folder-ubuntu-3")
 
 - Entry shared folder akan muncul. Klik OK.
 
-    ![share-folder-ubuntu-4](/assets/images/2020/share-folder-ubuntu-4.png "share-folder-ubuntu-4")
+    ![share-folder-ubuntu-4](/assets/images/2020/10/share-folder-ubuntu-4.png "share-folder-ubuntu-4")
 
 - Nyalakan VM. Jika sudah up, klik menu “Devices”, lalu klik “Insert Guest Additions CD Image…”
 
-    ![share-folder-ubuntu-5](/assets/images/2020/share-folder-ubuntu-5.png "share-folder-ubuntu-5")
+    ![share-folder-ubuntu-5](/assets/images/2020/10/share-folder-ubuntu-5.png "share-folder-ubuntu-5")
 
 ## Step 2 - Konfigurasi di Ubuntu
 - Mount “guest addition cd image” yang telah di-Insert.
@@ -42,7 +42,7 @@ $ sudo mount /dev/sr0 /media/cdrom
 - Jalankan script VboxLinuxAdditions
 `$ sudo ./VBoxLinuxAdditions.run`
 
-    ![share-folder-ubuntu-6](/assets/images/2020/share-folder-ubuntu-6.png "share-folder-ubuntu-6")
+    ![share-folder-ubuntu-6](/assets/images/2020/10/share-folder-ubuntu-6.png "share-folder-ubuntu-6")
 
 - Restart vm
 $ sudo reboot
@@ -55,7 +55,7 @@ Note: “vm-share” merupakan nama share yang telah dibuat di virtualbox settin
 - Cek apakah sudah di-mount
 `$ mount | grep vm-share`
 
-    ![share-folder-ubuntu-7](/assets/images/2020/share-folder-ubuntu-7.png "share-folder-ubuntu-7")
+    ![share-folder-ubuntu-7](/assets/images/2020/10/share-folder-ubuntu-7.png "share-folder-ubuntu-7")
 
 - Jika sudah berhasil, supaya shared foldernya bisa mount secara otomatis ketika vm ubuntu-nya dinyalakan, tambahkan entry mount shared folder tersebut ke /etc/fstab.
 ```
@@ -63,7 +63,7 @@ $ sudo vim /etc/fstab
 vm-share /home/ubuntu/hosts vboxsf defaults 0 0
 ```
 
-    ![share-folder-ubuntu-8](/assets/images/2020/share-folder-ubuntu-8.png "share-folder-ubuntu-8")
+    ![share-folder-ubuntu-8](/assets/images/2020/10/share-folder-ubuntu-8.png "share-folder-ubuntu-8")
 
 - Jika sudah, test dengan melakukan reboot. Shared folder tersebut akan mount secara otomatis ketika booting, Insya Allah.
 

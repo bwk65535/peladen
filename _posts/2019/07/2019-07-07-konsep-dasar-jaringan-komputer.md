@@ -27,24 +27,24 @@ Ada beberapa tipe topologi fisik :
 - Topologi Bus
 Topologi ini hanya menggunakan satu kabel coaxial sebagai penghubung di jaringan. Semua komputer di dalam jaringan terhubung ke kabel tersebut, bisa menggunakan konektor T maupun di hubungkan langsung. Jika kabel utamanya rusak, maka seluruh jaringan mati.
 
-![topologi bus](/assets/images/2019/bus-topology.png "Topologi bus")
+![topologi bus](/assets/images/2019/07/bus-topology.png "Topologi bus")
 
 - Topologi Ring
 Hampir sama dengan topologi bus, bedanya perangkat yang berada di ujung topologi dihubungkan ke perangkat di ujung yang lain, sehingga menyerupai lingkaran.
 
-![topologi ring-1](/assets/images/2019/ring-topology-1.png "Topologi ring-1")
-![topologi ring-2](/assets/images/2019/ring-topology-2.png "Topologi ring-2")
+![topologi ring-1](/assets/images/2019/07/ring-topology-1.png "Topologi ring-1")
+![topologi ring-2](/assets/images/2019/07/ring-topology-2.png "Topologi ring-2")
 
 - Topologi Star
 Semua komputer terhubung ke perangkat sentral hub/switch sebagai penghubungnya, sehingga komputer yang ingin mengirim data harus mengirim ke hub/switch terlebih dahulu. Jaringan ini sudah menggunakan kabel UTP. Jika perangkat sentralnya mati, maka semua perangkat yang terhubung dengannya tidak dapat mengirim data.
-![topologi star](/assets/images/2019/star-topology.png "Topologi star")
+![topologi star](/assets/images/2019/07/star-topology.png "Topologi star")
 
 - Topologi Full Mesh
 Topologi ini digunakan jika ingin mendapatkan tingkat reliabilitas yang tinggi di jaringan. Pada contoh, terlihat apabila ada satu jalur yang rusak, maka masih dapat menggunakan jalur yang lain. Kekurangannya topologi ini lebih mahal implementasinya dan memerlukan konfigurasi yang lebih kompleks.
 
-![topologi full mesh](/assets/images/2019/full-mesh-topology.png "Topologi full mesh")
+![topologi full mesh](/assets/images/2019/07/full-mesh-topology.png "Topologi full mesh")
 
 - Topologi Partial Mesh
 Mirip seperti full mesh, akan tetapi ada perangkat yang hanya terhubung ke beberapa perangkat saja, tidak ke semua perangkat. Topologi ini dapat digunakan jika topologi full mesh dirasa terlalu mahal atau sulit untuk diterapkan.
 
-![topologi partial mesh](/assets/images/2019/partial-mesh-topology.png "Topologi partial-mesh")
+![topologi partial mesh](/assets/images/2019/07/partial-mesh-topology.png "Topologi partial-mesh")

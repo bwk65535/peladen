@@ -8,7 +8,7 @@ Sistem operasi yang biasa disebut rpm-based bermula dari distro Fedora. Fedora j
 
 Centos adalah distro linux free yang disupport oleh komunitas dan merupakan turunan dari Red Hat Enterprise Linux (RHEL). Centos merupakan alternatif sistem operasi enterprise tanpa adanya biaya support dan sertifikasi. Centos kompatibel dengan RHEL karena merupakan hasil rebuild dari RHEL tanpa menyertakan Red Hat branding didalamnya. Centos adalah RHEL versi gratisnya begitulah kira-kira.
 
-![Centos logo](/assets/images/2020/320px-Centos-logo-light.png "Centos logo")
+![Centos logo](/assets/images/2020/11/320px-Centos-logo-light.png "Centos logo")
 
 ## Centos Stream
 Di versi Centos 8 sekarang ini, Centos juga mengeluarkan distro rolling-release yang bersumber dari Fedora. Rolling release maksudnya suatu software dikembangkan secara continuous berupa update yang kecil dan sering tanpa adanya point release terjadwal seperti pengembangan software pada umumnya.

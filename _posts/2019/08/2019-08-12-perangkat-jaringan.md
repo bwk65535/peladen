@@ -19,7 +19,7 @@ Umumnya pengkabelan tembaga menggunakan jenis kabel UTP (Unshielded Twisted Pair
 
 Konektor yang digunakan untuk terminasi kabel UTP adalah konektor RJ-45. Untuk tipe terminasi kabelnya sendiri ada 2 macam :
 
-![Terminasi UTP](/assets/images/2019/terminasi-utp.png "Terminasi UTP")<br>
+![Terminasi UTP](/assets/images/2019/08/terminasi-utp.png "Terminasi UTP")<br>
 Sumber : http://networkwhateva.weebly.com/uploads/5/5/6/9/55699197/5942409_orig.png
 
 Jika kita ingin membuat kabel berjenis straight, maka tipe terminasinya harus sama dikedua ujungnya, misal jika kita menggunakan tipe T568B, maka di kedua ujung kabel harus diterminasi dengan tipe T568B. Kabel straight digunakan untuk menghubungkan perangkat yang berbeda jenis, misalnya komputer ke switch, router ke switch, dll.
@@ -33,43 +33,43 @@ Ada dua tipe kabel fiber optic :
 - Multi mode
 Pada kabel jenis ini, ada banyak jalur cahaya yang ditransmisikan, menggunakan sumber cahaya LED. Diameter core biasanya 62,5 micron atau 50 micron. Untuk pengkabelan jarak dekat dan menengah.
 
-    ![Multi Mode Fiber](/assets/images/2019/multimode-fiber-path.png "Multi Mode Fiber")<br>
+    ![Multi Mode Fiber](/assets/images/2019/08/multimode-fiber-path.png "Multi Mode Fiber")<br>
 Sumber : cisco SPNGN1101S02L02
 
 - Single mode
 Pada kabel ini, hanya ada satu jalur cahaya yang ditransmisikan, sumber cahaya menggunakan laser. Diameter core antara 8-10 micron. Untuk pengkabelan jarak jauh.
 
-    ![Single Mode Fiber](/assets/images/2019/singlemode-fiber-path.png "Single Mode Fiber")<br>
+    ![Single Mode Fiber](/assets/images/2019/08/singlemode-fiber-path.png "Single Mode Fiber")<br>
 Sumber : cisco SPNGN1101S02L02
 
 Ada beberapa konektor yang digunakan dalam pengkabelan fiber optic, contohnya seperti berikut :
 
-![Konektor fiber optic](/assets/images/2019/konektor-fiber-optic.jpg "Konektor fiber optic")<br>
+![Konektor fiber optic](/assets/images/2019/08/konektor-fiber-optic.jpg "Konektor fiber optic")<br>
 Sumber : google search
 
 ## Perangkat-perangkat jaringan
 - Repeater dan Hub<br>
 Repeater dan hub merupakan perangkat layer 1 di model OSI yang hanya meneruskan sinyal yang masuk lalu mengeluarkannya di semua port yang dimilikinya. Hub mempunyai port yang lebih banyak dari repeater, sehingga disebut juga multiport repeater. Jika menggunakan hub, hanya ada satu perangkat yang dapat mengirim dalam satu waktu, sehingga hub bersifat half duplex. Hub tidak dapat membaca alamat fisik maupun logika, sehingga hub tidak memecah collision domain dan broadcast domain.
 
-    ![Repeater](/assets/images/2019/repeater.png "Repeater")
+    ![Repeater](/assets/images/2019/08/repeater.png "Repeater")
 
 - Bridge<br>
 Ketika jaringan sudah semakin besar, maka hub tidak memadai lagi untuk digunakan. Jaringan yang dikoneksikan menggunakan hub akan semakin lambat karena banyaknya paket broadcast dan seringnya terjadi collision. Maka dibuatlah bridge yang berfungsi untuk menghubungkan dua segmen jaringan yang menggunakan hub.<br>
 <br>
 Bridge beroperasi di layer 2 dalam model OSI. Bridge dapat memforward, memfilter dan melakukan flooding frame, karena bridge sudah dapat membaca mac address. Karena kemampuannya itulah bridge dapat memecah collision domain, sehingga frame yang harusnya hanya beredar di suatu segmen tidak membanjiri segmen yang lain.
 
-    ![Bridge](/assets/images/2019/bridge.png "Bridge")
+    ![Bridge](/assets/images/2019/08/bridge.png "Bridge")
        
 - Switch<br>
 Switch merupakan pengembangan dari bridge. Switch mempunyai port yang lebih banyak daripada bridge sehingga sering disebut juga multiport bridge. Switch dapat bekerja lebih cepat karena dapat memproses frame di hardware. Sekarang ini switch sudah menggantikan hub sebagai penghubung ke end devices, karena setiap port di switch bekerja di layer 2 sehingga dapat membaca mac address dan memecah collision domain di jaringan.<br>
 <br>
 Switch dapat bekerja secara full duplex, yang berarti setiap perangkat yang terhubung ke switch dapat mengirim dan menerima paket dalam waktu yang bersamaan.
 
-    ![Switch](/assets/images/2019/switch.png "Switch")
+    ![Switch](/assets/images/2019/08/switch.png "Switch")
 
 - Router<br>
 Router merupakan perangkat yang bekerja di layer 3 pada model OSI. Router dapat membaca IP address, sehingga router dapat melakukan meneruskan paket yang melintasi jaringan yang berbeda. Dalam melakukan pemilihan jalur terbaik, router memiliki routing table yang berisi alamat-alamat jaringan yang diketahuinya. Routing table tersebut diisi bisa secara statik, yaitu dengan konfigurasi manual, bisa juga secara dinamis menggunakan protokol-protokol routing.<br>
 <br>
 Dikarenakan router dapat mengenali ip address dan alamat jaringan, selain memecah collision domain, setiap port router juga dapat memecah broadcast domain.
 
-    ![Router](/assets/images/2019/router.png "Router")
+    ![Router](/assets/images/2019/08/router.png "Router")

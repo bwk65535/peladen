@@ -11,11 +11,11 @@ Perangkat yang melakukan fungsi routing disebut dengan router. Dalam melakukan r
 ## Segmentasi Jaringan
 Mengapa kita perlu menggunakan routing? Pertanyaan ini tidak lepas dari kebutuhan kita dalam melakukan segmentasi jaringan. Pada awalnya, kita mungkin memiliki jaringan kecil seperti ini saja:
 
-![Segmentasi jaringan 1](/assets/images/2020/segmen-jaringan-1.png "Segmentasi jaringan 1")
+![Segmentasi jaringan 1](/assets/images/2020/08/segmen-jaringan-1.png "Segmentasi jaringan 1")
 
 Semakin lama, jumlah perangkat jaringan kita bertambah. Kita mungkin perlu untuk menambah switch untuk perangkat jaringan kita yang lain dan menghubungkan antar switch tersebut.
 
-![Segmentasi jaringan 2](/assets/images/2020/segmen-jaringan-2.png "Segmentasi jaringan 2")
+![Segmentasi jaringan 2](/assets/images/2020/08/segmen-jaringan-2.png "Segmentasi jaringan 2")
 
 Dengan makin bertambahnya perangkat yang terhubung ke jaringan dan semakin banyaknya trafik, akan ada masalah yang muncul di jaringan. Beberapa di antaranya adalah:
 
@@ -24,7 +24,7 @@ Paket broadcast merupakan paket yang ditujukan untuk semua perangkat pada jaring
 <br>
 Akan lebih berbahaya jika pada jaringan kita terdapat looping. Ethernet frame tidak memiliki field TTL (time to live) seperti ip packet. Sehingga jika terjadi looping pada layer 2, maka frame tersebut akan loop selamanya di jaringan hingga kita cabut koneksi kabel secara manual, atau hingga switchnya mengalami crash.
       
-    ![Broadcast storm](/assets/images/2020/broadcast-storm.gif "Broadcast storm")
+    ![Broadcast storm](/assets/images/2020/08/broadcast-storm.gif "Broadcast storm")
       
 - Security<br>
 Jaringan yang tidak disegmentasi merupakan jaringan flat, artinya semua perangkat berada pada satu jaringan besar yang sama dan dapat saling mengakses satu sama lain. Hal ini cukup berbahaya karena bisa saja ada file atau service penting yang harusnya memiliki akses terbatas menjadi dapat diakses oleh semua orang/perangkat karena tidak adanya access control di level ip (layer 3).<br>
@@ -43,16 +43,16 @@ Pengertian sederhana dari **collision domain** adalah bagian dari jaringan diman
 
 Pada contoh gambar di bawah, hub/repeater yang merupakan perangkat layer 1 tidak memecah collision domain. Setiap link/segmen jaringan yang terkoneksi ke hub merupakan satu collision domain.
 
-![single collision domain](/assets/images/2020/collision-domain-1.png "single collision domain")
+![single collision domain](/assets/images/2020/08/collision-domain-1.png "single collision domain")
 
 Berbeda dengan hub, switch dan router memecah collision domain. Setiap port pada switch atau router berada pada collision domain yang terpisah.
 
-![multiple collision domain](/assets/images/2020/collision-domain-2.png "multiple collision domain")
+![multiple collision domain](/assets/images/2020/08/collision-domain-2.png "multiple collision domain")
 
 Berikutnya **broadcast domain** pengertian singkatnya adalah suatu area dari jaringan di mana paket broadcast akan di teruskan (forwarded) ke setiap port yang berada pada broadcast domain yang sama. Router yang merupakan perangkat layer 3 akan memecah broadcast domain, karena setiap port pada router akan berada pada jaringan yang berbeda, sedangkan switch yang merupakan perangkat layer 2 tidak memecah broadcast domain, karena setiap port pada switch berada pada jaringan yang sama.
 
-![broadcast-domain-1](/assets/images/2020/broadcast-domain-1.png "broadcast-domain-1")
-![broadcast-domain-2](/assets/images/2020/broadcast-domain-2.png "broadcast-domain-2")
+![broadcast-domain-1](/assets/images/2020/08/broadcast-domain-1.png "broadcast-domain-1")
+![broadcast-domain-2](/assets/images/2020/08/broadcast-domain-2.png "broadcast-domain-2")
  
 ## Tabel Routing
 Supaya router dapat melakukan pemilihan jalur terbaik (routing), maka router harus memiliki paling tidak informasi berikut di dalam tabel routingnya:
@@ -61,8 +61,8 @@ Supaya router dapat melakukan pemilihan jalur terbaik (routing), maka router har
 
 Seperti yang telah dijelaskan, informasi tersebut dapat dimasukkan secara manual oleh administrator atau didapatkan dari router yang lain menggunakan *dynamic routing protocol*. Selain itu, tabel routing juga berisi alamat network di mana router itu berada (*directly connected*).
 
-![topologi-routing-1](/assets/images/2020/topologi-routing-1.png "topologi-routing-1")
-![tabel-routing-1](/assets/images/2020/tabel-routing-1.png "tabel-routing-1")
+![topologi-routing-1](/assets/images/2020/08/topologi-routing-1.png "topologi-routing-1")
+![tabel-routing-1](/assets/images/2020/08/tabel-routing-1.png "tabel-routing-1")
 
 Gambar di atas contoh dari tabel routing pada router Cisco yang memiliki ip address 192.168.1.1/24 pada interface fast ethernet 0/0 yang dimilikinya. Terlihat ada network 192.168.1.0/24 yang terdeteksi sebagai directly connected network pada interface FastEthernet0/0.
 
@@ -74,8 +74,8 @@ Beberapa catatan mengenai routing table sebuah router:
 ## Static Routing
 Static routing merupakan informasi route yang dimasukkan ke dalam tabel routing secara manual oleh administrator. Konfigurasi static route minimal harus ada alamat network tujuan dan alamat IP router atau gateway yang menjadi next-hop menuju network tujuannya.
 
-![topologi-routing-statik](/assets/images/2020/topologi-routing-statik.png "topologi-routing-statik")
-![tabel-routing-2](/assets/images/2020/tabel-routing-2.png "tabel-routing-2")
+![topologi-routing-statik](/assets/images/2020/08/topologi-routing-statik.png "topologi-routing-statik")
+![tabel-routing-2](/assets/images/2020/08/tabel-routing-2.png "tabel-routing-2")
 
 Pada gambar di atas, terlihat contoh menambahkan static route pada R1, dimana untuk menuju network 192.168.2.0, R1 harus mem-forward traffic lewat R2 pada alamat IP 192.168.3.2.
 
@@ -105,7 +105,7 @@ Ada 3 jenis cara kerja protokol routing dinamis saat ini:
 - Distance Vector<br>
 Protokol routing yang termasuk distance vector akan melakukan pemilihan rute terbaik dengan membandingkan jarak antar rute-rute yang tersedia. Rute yang dipilih adalah rute yang memiliki jarak paling kecil. Contoh protokol routing distance vector adalah RIP.
 
-    ![distance-vector](/assets/images/2020/distance-vector.png "distance-vector")
+    ![distance-vector](/assets/images/2020/08/distance-vector.png "distance-vector")
 
     Pada contoh di atas jika menggunakan distance vector, router R1 untuk menuju network di belakang R5 akan menggunakan jalur melewati R4 sebagai rute terbaiknya. R1 melihat jumlah hop (hop count) melewati R4 akan lebih kecil daripada melewati R2 - R3.
 ```
@@ -115,7 +115,7 @@ R1 --> R2 --> R3 --> R5 = 3 hop count
 - Link-state<br>
 Pada protokol routing link-state, router akan mengumpulkan semua informasi alamat network tujuan, next-hop router, beserta informasi link antar router pada satu domain jaringan sehingga masing-masing router akan mengetahui topologi lengkap dari suatu jaringan. Selanjutnya router akan melakukan kalkulasi penghitungan jalur yang paling pendek untuk setiap network dari informasi tersebut.
       
-    ![link-state-routing](/assets/images/2020/link-state-routing.png "link-state-routing")
+    ![link-state-routing](/assets/images/2020/08/link-state-routing.png "link-state-routing")
       
     Pada contoh di atas jika menggunakan protokol routing link-state, router akan melakukan kalkulasi jalur terbaik untuk semua link berdasarkan cost. Cost yang dapat digunakan contohnya adalah besaran bandwidth pada tiap link. R1 memilih rute melewati R2 - R3 karena costnya lebih kecil dibandingkan jika melewati R4.
       
@@ -134,8 +134,8 @@ Contoh penggunaan default route yang paling umum adalah untuk mengakses Internet
 
 Network address untuk default route diset sebagai 0.0.0.0/0 yang berarti mencakup seluruh alamat IP.
 
-![topologi-default-route](/assets/images/2020/topologi-default-route.png "topologi-default-route")
-![tabel-routing-3](/assets/images/2020/tabel-routing-3.png "tabel-routing-3")
+![topologi-default-route](/assets/images/2020/08/topologi-default-route.png "topologi-default-route")
+![tabel-routing-3](/assets/images/2020/08/tabel-routing-3.png "tabel-routing-3")
 
 Pada contoh di atas, router R1 terhubung ke Internet melalui interface FastEthernet0/1, maka untuk menambah route ke Internet, kita cukup menambahkan default route 0.0.0.0/0 menuju ip address router ISP sebagai next-hop nya.
 

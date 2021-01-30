@@ -8,7 +8,7 @@ Model 7-layer OSI hanya digunakan sebagai referensi saja. OSI digunakan untuk me
 
 Nama TCP/IP diambil berdasarkan protokol yang paling populer di dalamnya, yaitu TCP dan IP, tapi bukan berarti kita hanya bisa menggunakan TCP dan IP saja. Pada dasarnya, model OSI dan TCP/IP tidak banyak berbeda, hanya pada TCP/IP, layer application, presentation, dan session digabung menjadi layer application saja. Selain itu, layer data link dan physical pada OSI digabung juga menjadi layer Network Access. Dan layer network pada OSI berubah namanya menjadi layer Internet pada TCP/IP.
 
-![TCP/IP Layer](/assets/images/2019/tcpip-vs-osi.png "TCP/IP Layer")
+![TCP/IP Layer](/assets/images/2019/07/tcpip-vs-osi.png "TCP/IP Layer")
 
 ## TCP dan UDP
 Pada jaringan TCP/IP, kita mempunyai 2 transport protocol utama :
@@ -20,7 +20,7 @@ UDP merupakan protokol yang simple, bersifat connectionless, dan dideskripsikan 
 ## TCP 3-way handshake
 Pada saat komputer akan mengirim data menggunakan TCP, TCP akan membangun koneksi terlebih dahulu dengan komputer tujuan sebelum dilakukan pengiriman data. Proses membangun koneksi ini disebut tcp 3-way handshake.
 
-![TCP 3-way handshake](/assets/images/2019/tcp-3-way-handshake.png "TCP 3-way handshake")
+![TCP 3-way handshake](/assets/images/2019/07/tcp-3-way-handshake.png "TCP 3-way handshake")
 
 ## Port Number
 TCP dan UDP menggunakan alamat port untuk menghubungkan aplikasi dengan jaringan. Pada setiap data yang dikirimkan akan diberikan alamat port pengirim/sumber dan alamat port penerima/tujuan.
