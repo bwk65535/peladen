@@ -5,6 +5,7 @@ categories: server
 ---
 
 Semua file di linux disusun di dalam file system secara hierarkis. Bentuk hierarkinya berupa *inverted tree*, yaitu *root* berada di puncak hierarki. Di bawah root terletak beberapa direktori dan subdirektori yang saling berurutan.
+
 ```
 /
 ├── bin -> usr/bin
@@ -35,6 +36,7 @@ Semua file di linux disusun di dalam file system secara hierarkis. Bentuk hierar
 └── var
     └── tmp
 ```
+
 direktory **/** merupakan root directory atau direktori paling atas di sebuah file system. Setiap direktori yang ada di bawah root *by default* mempunyai kegunaannya masing-masing. Misalnya direktori **boot** untuk menyimpan file yang dibutuhkan untuk *booting system*, direktori **etc** untuk menyimpan file konfigurasi, dll.
 
 Selain menunjukkan root, tanda **/** juga digunakan sebagai pemisah direktori untuk menunjukkan *path*. Misalnya subdirektori Documents ada di dalam direktori home, maka bisa ditulis menjadi */home/Documents*. 
