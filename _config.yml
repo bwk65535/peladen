@@ -3,10 +3,10 @@ email: medullium@yandex.com
 description: >- # this means to ignore newlines until "baseurl:"
   semua tentang jaringan komputer
 # baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://peladen.netlify.app"
+url: "https://www.peladen.web.id"
 
 show_excerpts: true
-paginate: 5
+paginate: 10
 paginate_path: "/page/:num/"
 
 twitter_username: v0latile
