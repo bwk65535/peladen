@@ -16,23 +16,23 @@ Berikut langkah-langkahnya.
 - Masuk ke settings
 - Klik tab “Shared Folders”
 
-    ![share-folder-centos-1](/assets/images/2020/10/share-folder-centos-1.png "share-folder-centos-1")
+    ![share-folder-centos-1](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-1.png "share-folder-centos-1")
 
 - Klik “Adds new shared folder” di sebelah kanan
 
-    ![share-folder-centos-2](/assets/images/2020/10/share-folder-centos-2.png "share-folder-centos-2")
+    ![share-folder-centos-2](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-2.png "share-folder-centos-2")
 
 - Pilih folder di host yang akan di share pada bagian “Folder Path”. Isi nama share pada “Folder Name”. Klik OK.
 
-    ![share-folder-centos-3](/assets/images/2020/10/share-folder-centos-3.png "share-folder-centos-3")
+    ![share-folder-centos-3](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-3.png "share-folder-centos-3")
 
 - Entry shared folder akan muncul. Klik OK.
 
-    ![share-folder-centos-4](/assets/images/2020/10/share-folder-centos-4.png "share-folder-centos-4")
+    ![share-folder-centos-4](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-4.png "share-folder-centos-4")
 
 - Nyalakan VM. Jika sudah up, klik menu “Devices”, lalu klik “Insert Guest Additions CD Image…”
 
-    ![share-folder-centos-5](/assets/images/2020/10/share-folder-centos-5.png "share-folder-centos-5")
+    ![share-folder-centos-5](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-5.png "share-folder-centos-5")
 
 ## Step 2 - Konfigurasi di Centos
 - Instal beberapa package yang dibutuhkan untuk menginstall virtualbox linux additions.
@@ -41,7 +41,7 @@ $ sudo -i
 # dnf install tar bzip2 kernel-devel-$(uname -r) kernel-headers perl gcc make elfutils-libelf-devel
 ```
 
-    ![share-folder-centos-6](/assets/images/2020/10/share-folder-centos-6.png "share-folder-centos-6")
+    ![share-folder-centos-6](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-6.png "share-folder-centos-6")
 
 - Mount “guest addition cd image” yang telah di-Insert.
 ```
@@ -49,12 +49,12 @@ $ sudo -i
 # mount /dev/sr0 /media/cdrom
 ```
 
-    ![share-folder-centos-7](/assets/images/2020/10/share-folder-centos-7.png "share-folder-centos-7")
+    ![share-folder-centos-7](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-7.png "share-folder-centos-7")
 
 - Jalankan script VboxLinuxAdditions
 `# ./VBoxLinuxAdditions.run`
 
-    ![share-folder-centos-8](/assets/images/2020/10/share-folder-centos-8.png "share-folder-centos-8")
+    ![share-folder-centos-8](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-8.png "share-folder-centos-8")
 
 - Restart vm
 `# reboot`
@@ -67,14 +67,14 @@ $ mount | grep shared
 ```
 Note: “shared” merupakan nama share yang telah dibuat di virtualbox settings.
 
-    ![share-folder-centos-9](/assets/images/2020/10/share-folder-centos-9.png "share-folder-centos-9")
+    ![share-folder-centos-9](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-9.png "share-folder-centos-9")
 
 - Jika sudah berhasil, supaya shared foldernya bisa mount secara otomatis ketika vm centos-nya dinyalakan, tambahkan entry mount shared folder tersebut ke /etc/fstab.
 ```$ sudo vim /etc/fstab
 vm-share /home/centos/hosts vboxsf defaults 0 0
 ```
 
-    ![share-folder-centos-10](/assets/images/2020/10/share-folder-centos-10.png "share-folder-centos-10")
+    ![share-folder-centos-10](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/10/share-folder-centos-10.png "share-folder-centos-10")
 
 - Jika sudah, test dengan melakukan reboot. Shared folder tersebut akan mount secara otomatis ketika booting, Insya Allah.
 
