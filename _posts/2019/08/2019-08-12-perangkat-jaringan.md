@@ -2,6 +2,7 @@
 layout: post
 title:  "Perangkat Jaringan"
 categories: jaringan
+tag: "Dasar Jaringan"
 ---
 
 ## Pengkabelan

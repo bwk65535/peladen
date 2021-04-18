@@ -2,6 +2,7 @@
 layout: post
 title:  "Konsep Dasar Jaringan Komputer"
 categories: jaringan
+tag: "Dasar Jaringan"
 ---
 
 ## Pengertian Jaringan

@@ -2,6 +2,7 @@
 layout: post
 title:  "TCP/IP Protocol Suite"
 categories: jaringan
+tag: "Dasar Jaringan"
 ---
 
 Model 7-layer OSI hanya digunakan sebagai referensi saja. OSI digunakan untuk menganalisa jaringan dan protokol di dalamnya. Sedangkan TCP/IP merupakan suatu model jaringan yang sekarang digunakan. TCP/IP terdiri dari sekumpulan protokol yang digunakan perangkat jaringan untuk berkomunikasi. Hanya model TCP/IP yang diterima dan digunakan oleh jaringan Internet sekarang ini. 

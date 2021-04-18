@@ -2,6 +2,7 @@
 layout: post
 title:  "Konsep Routing"
 categories: jaringan
+tag: "Dasar Jaringan"
 ---
 
 Routing dalam jaringan adalah proses mencari jalur terbaik dari satu alamat jaringan untuk menuju alamat jaringan yang lain. Pemilihan jalur terbaik dapat bergantung pada keinginan dari administrator jaringan, protokol routing yang dipergunakan, maupun kebijakan (policy) dari individu/perusahaan yang memiliki jaringan tersebut. 
