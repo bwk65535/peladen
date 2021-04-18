@@ -1,13 +1,14 @@
 ---
 layout: page
-title: jaringan
-permalink: /jaringan/
+title: series
+permalink: /series/
 ---
 
-<ul>
-  {% for post in site.categories.jaringan %}
-    {% if post.url %}
+{% for tag in site.tags %}
+  <h3>{{ tag[0] }}</h3>
+  <ul>
+    {% for post in tag[1] %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+{% endfor %}
