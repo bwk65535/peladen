@@ -2,6 +2,7 @@
 layout: post
 title:  "Mengenal Linux"
 categories: server
+tag: "Dasar Linux"
 ---
 
 ## Linux

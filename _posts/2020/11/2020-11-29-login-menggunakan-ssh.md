@@ -2,6 +2,7 @@
 layout: post
 title:  "Login Menggunakan SSH"
 categories: server
+tag: "Dasar Linux"
 ---
 
 ## Headless server

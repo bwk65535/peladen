@@ -2,6 +2,7 @@
 layout: post
 title:  "Link antar file di Linux"
 categories: server
+tag: "Dasar Linux"
 ---
 
 Pada sistem operasi linux, kita dapat membuat **link** atau suatu nama yang mereferensikan/menunjuk ke suatu file/direktori.

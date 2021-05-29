@@ -2,6 +2,7 @@
 layout: post
 title:  "Bash Shell Expansion"
 categories: server
+tag: "Dasar Linux"
 ---
 
 Bash shell mempunyai kemampuan untuk melakukan *expansion* atau perluasan/pengembangan dari suatu *pattern* di command line. Contoh yang paling banyak dipakai adalah kemampuan **globbing** yang biasa di pakai untuk melakukan *matching* beberapa name file sekaligus.

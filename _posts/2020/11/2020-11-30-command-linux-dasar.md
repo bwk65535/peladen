@@ -2,6 +2,7 @@
 layout: post
 title:  "Beberapa perintah dasar di Linux"
 categories: server
+tag: "Dasar Linux"
 ---
 
 Serperti yang telah diketahui sebelumnya, bash shell merupakan shell yang paling banyak dipakai di berbagai linux distro. Berikut beberapa contoh perintah (command) dasar pada bash shell yang biasa dipakai oleh sysadmin sehari-hari.

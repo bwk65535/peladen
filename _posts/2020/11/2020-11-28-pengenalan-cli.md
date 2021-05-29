@@ -2,6 +2,7 @@
 layout: post
 title:  "Pengenalan Command Line Interface (CLI)"
 categories: server
+tag: "Dasar Linux"
 ---
 
 Di dalam menggunakan komputer, kita sebagai pengguna (user) membutuhkan antar muka (interface) untuk memberikan perintah atau instruksi ke dalam komputer. Bentuk interface yang banyak digunakan untuk mengkonfigurasi sebuah server adalah CLI (Command Line Interface) yang berbentuk teks (text based).

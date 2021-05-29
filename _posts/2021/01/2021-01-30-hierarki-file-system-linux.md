@@ -2,6 +2,7 @@
 layout: post
 title:  "Hierarki File System Linux"
 categories: server
+tag: "Dasar Linux"
 ---
 
 Semua file di linux disusun di dalam file system secara hierarkis. Bentuk hierarkinya berupa *inverted tree*, yaitu *root* berada di puncak hierarki. Di bawah root terletak beberapa direktori dan subdirektori yang saling berurutan.

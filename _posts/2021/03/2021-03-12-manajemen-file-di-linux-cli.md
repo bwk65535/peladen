@@ -2,6 +2,7 @@
 layout: post
 title:  "Manajemen file di Linux menggunakan CLI"
 categories: server
+tag: "Dasar Linux"
 ---
 
 CLI pada linux menyediakan beberapa perintah dasar yang dapat digunakan untuk mengelola file/folder.
