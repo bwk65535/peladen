@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Instalasi GNS3 VM di Virtualbox"
-categories: jaringan
-tags: tutorial gns3
+categories: tutorial
+tag: gns3
 ---
 
 ### Intro
