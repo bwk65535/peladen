@@ -2,7 +2,7 @@
 layout: post
 title:  "Instalasi GNS3 VM di Virtualbox"
 categories: tutorial
-tag: gns3
+tag: GNS3
 ---
 
 ### Intro
