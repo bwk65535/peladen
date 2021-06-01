@@ -5,7 +5,6 @@ categories: tutorial
 tag: GNS3
 ---
 
-### Intro
 [GNS3](https://www.gns3.com/) merupakan salah satu software simulasi jaringan yang banyak dipakai saat ini. Di dalamnya kita bisa menjalankan beberapa perangkat jaringan real seperti router, switch, firewall, server ataupun perangkat lainnya menggunakan teknologi virtualisasi. Kita bisa menggunakan software virtualisasi yang umum digunakan seperti virtualbox, qemu, dan dynamips.
 
 Saat ini, GNS3 juga memiliki versi virtual machine (GNS3 VM) yang dapat langsung kita jalankan di virtualbox. Dari laptop/PC kita bisa mengakses GNS3 di VM tersebut melalui web UI. Fitur ini sama seperti yang telah ada pada software simulasi lainnya seperti [EVE-NG](https://www.eve-ng.net/) .
