@@ -1,11 +1,11 @@
 ---
 layout: page
-title: tutorial
-permalink: /tutorial/
+title: labs
+permalink: /labs/
 ---
 
 <ul>
-  {% for post in site.categories.tutorial %}
+  {% for post in site.categories.labs %}
     {% if post.url %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
