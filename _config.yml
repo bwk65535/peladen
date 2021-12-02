@@ -10,7 +10,7 @@ paginate: 10
 paginate_path: "/page/:num/"
 
 twitter_username: v0latile
-# github_username:  jekyll
+github_username:  bwk65535
 
 # Build settings
 theme: minima
