@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   jekyll:
-    entrypoint: bundle exec jekyll serve --trace
+    entrypoint: bundle exec jekyll serve --trace --drafts
     # entrypoint: cat
     image: jekyll/jekyll:latest
     network_mode: "host"
