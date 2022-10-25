@@ -23,7 +23,7 @@ Berikut setup lab yang digunakan:
 | worker02 | 192.168.56.153/24 | Worker node 2 |
 | worker03 | 192.168.56.154/24 | Worker node 3 |
 
-Note: jika mau ngelab menggunakan virtualbox+vagrant, bisa menggunakan contoh [Vagrantfile](https://gist.github.com/bwk65535/70ba078acf1546f971a1beb3439448be) berikut.
+Note: jika mau ngelab menggunakan virtualbox+vagrant, bisa menggunakan contoh [Vagrantfile](https://gist.github.com/bwk65535/4697a76dc256f4a5a3582b8430bed41e) berikut.
 
 ## Step 1 - OS Preparation
 Matikan firewalld dan SELinux di semua server
