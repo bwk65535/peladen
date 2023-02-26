@@ -1,4 +1,4 @@
-FROM ruby:2-alpine AS builder
+FROM ruby:alpine AS builder
 
 WORKDIR /app
 RUN set -eux \

@@ -7,8 +7,14 @@ services:
     network_mode: "host"
     volumes:
       - $PWD:/app
-      - $PWD/vendor/bundle:/usr/local/bundle
-      - $PWD/vendor/gems:/usr/gem
+      - jekyll-bundle:/usr/local/bundle
+      - jekyll-gems:/usr/gem
+      # - $PWD/vendor/bundle:/usr/local/bundle
+      # - $PWD/vendor/gems:/usr/gem
     # tty: true
     user: jekyll
     working_dir: /app
+
+volumes:
+  jekyll-bundle:
+  jekyll-gems:
