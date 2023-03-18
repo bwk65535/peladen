@@ -356,5 +356,5 @@ WEB 02 - TEST PAGE
 ```
 Kita bisa mengecek HAProxy stats dan status upstreamnya di halaman stats pada virtual ip port 8080 sesuai yang telah di konfigurasi.
 
-![haproxy stats](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen//2022/06/haproxy_stats.png "haproxy stats")
+![haproxy stats](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2022/06/haproxy_stats.png "haproxy stats")
 
