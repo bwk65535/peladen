@@ -9,5 +9,4 @@ _site/
 vendor/
 
 # Others
-assets/images/
 .vscode/

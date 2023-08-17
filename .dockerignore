@@ -14,5 +14,4 @@ vendor/
 .git/
 .github/
 docker/
-assets/images/
 ch_img_url.sh
