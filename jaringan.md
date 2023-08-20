@@ -1,6 +1,6 @@
 ---
 layout: page
-title: jaringan
+title: Jaringan
 permalink: /jaringan/
 ---
 

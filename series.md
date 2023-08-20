@@ -1,6 +1,6 @@
 ---
 layout: page
-title: series
+title: Series
 permalink: /series/
 ---
 

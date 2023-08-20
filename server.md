@@ -1,6 +1,6 @@
 ---
 layout: page
-title: server
+title: Server
 permalink: /server/
 ---
 

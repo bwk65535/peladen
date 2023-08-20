@@ -1,6 +1,6 @@
 ---
 layout: page
-title: labs
+title: Labs
 permalink: /labs/
 ---
 
