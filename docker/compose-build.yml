@@ -1,9 +1,9 @@
-version: "3.8"
+version: "3"
 services:
   jekyll:
     build:
       context: ../.
-      dockerfile: docker/Dockerfile
+      dockerfile: docker/build.Dockerfile
     image: v0latile/peladen:latest
     networks:
       - peladen-net

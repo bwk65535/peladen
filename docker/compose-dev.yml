@@ -1,19 +1,20 @@
-version: "3.8"
+version: "3"
 services:
   jekyll:
-    entrypoint: bundle exec jekyll serve --trace --drafts
+    build:
+      context: ../.
+      dockerfile: docker/dev.Dockerfile
+    entrypoint: bundle exec jekyll serve --host=0.0.0.0 --livereload --drafts --trace
     # entrypoint: cat
-    image: jekyll/jekyll:latest
-    network_mode: "host"
-    volumes:
-      - $PWD:/app
-      - jekyll-bundle:/usr/local/bundle
-      - jekyll-gems:/usr/gem
-      # - $PWD/vendor/bundle:/usr/local/bundle
-      # - $PWD/vendor/gems:/usr/gem
+    image: v0latile/jekyll:latest
+    ports:
+      - "4000:4000"
+      - "35729:35729"
     # tty: true
-    user: jekyll
-    working_dir: /app
+    volumes:
+      - $PWD:/srv/jekyll
+      - jekyll-bundle:/usr/local/bundle
+      - jekyll-gems:/home/jekyll/gems
 
 volumes:
   jekyll-bundle:
