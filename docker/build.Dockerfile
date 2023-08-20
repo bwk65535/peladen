@@ -41,11 +41,11 @@ RUN set -eux \
 USER jekyll
 WORKDIR /srv/jekyll
 
-COPY Gemfile Gemfile.lock ./
+COPY --chown=jekyll:jekyll Gemfile Gemfile.lock ./
 RUN set -eux \
   && bundle install
 
-COPY . .
+COPY --chown=jekyll:jekyll . .
 RUN set -eux \
   && bundle exec jekyll build
 
