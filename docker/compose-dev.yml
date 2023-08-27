@@ -4,7 +4,7 @@ services:
     build:
       context: ../.
       dockerfile: docker/dev.Dockerfile
-    entrypoint: bundle exec jekyll serve --host=0.0.0.0 --livereload --drafts --trace
+    entrypoint: bash -c "bundle install && bundle exec jekyll serve --host=0.0.0.0 --livereload --drafts --trace"
     # entrypoint: cat
     image: v0latile/jekyll:latest
     ports:
