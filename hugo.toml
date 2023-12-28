@@ -1,0 +1,4 @@
+baseURL = 'https://peladen.web.id/'
+languageCode = 'in'
+title = 'Peladen Blog'
+theme = 'simpel'
