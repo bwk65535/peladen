@@ -1,0 +1,47 @@
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 60em;
+}
+
+header {
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+}
+
+#simpel {
+  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0em;
+}
+
+#simpel_full {
+  text-align: center;
+  margin-top: 0em;
+}
+
+#menu {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+#menu li {
+  display: inline;
+}
+
+#menu li:not(:last-of-type)::after {
+  content: ' | ';
+}
