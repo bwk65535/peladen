@@ -28,5 +28,5 @@ COPY --chown=hugo:hugo . .
 RUN set -eux \
   && hugo
 
-FROM nginx:1
+FROM nginxinc/nginx-unprivileged:alpine
 COPY --from=builder /home/hugo/app/public /usr/share/nginx/html
