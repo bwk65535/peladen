@@ -1,4 +1,4 @@
-FROM alpine:3
+FROM alpine:3 as builder
 
 # Add hugo user
 RUN set -eux \
