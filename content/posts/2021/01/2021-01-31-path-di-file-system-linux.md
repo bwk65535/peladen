@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Path di File System Linux"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Path di File System Linux'
+date = 2021-01-31T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 **Path** merupakan suatu alamat yang menunjukkan lokasi dari file atau direktori di dalam file system. Path bersifat unik dan menggunakan tanda **/** (forward slash) sebagai separator antar direktori. Suatu direktori/*folder* dapat direferensikan dengan cara yang sama seperti file di dalam path.
 

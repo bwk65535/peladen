@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Komponen Helm"
-categories: server
-tag: "Helm Package Manager"
----
++++
+title = 'Komponen Helm'
+date = 2022-05-02T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Helm Package Manager']
++++
 
 Helm mempunyai beberapa komponen untuk dapat bekerja. Mulai dari **helm cli** untuk mengeksekusi **helm command**, **helm charts** yang berisi instruksi dan konfigurasi untuk mendeploy aplikasi, **chart repository** untuk menyimpan dan mendistribusikan chart, **helm release**  yang menunjukkan deployment dari aplikasi, dan beberapa komponen pendukung lainnya.
 

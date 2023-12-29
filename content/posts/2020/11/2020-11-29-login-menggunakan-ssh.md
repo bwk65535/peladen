@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Login Menggunakan SSH"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Login Menggunakan SSH'
+date = 2020-11-29T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 ## Headless server
 Umumnya server yang dijalankan untuk di data center tidak memiliki display monitor dan keyboard yang terhubung ke server tersebut. Untuk me-manage server, biasanya sysadmin akan terhubung melalui jaringan ke server tersebut dengan protokol SSH atau me-remote server tersebut via koneksi serial yang terhubung ke *console server* sebagai *out-of-band management*.

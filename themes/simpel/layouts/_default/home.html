@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ .Content }}
   {{ $pages := where .Site.RegularPages "Section" "posts" }}
-  {{ $pages = $pages.ByTitle }}
-  {{ range (.Paginate $pages 10).Pages }}
+  {{ $pages = $pages.ByDate.Reverse }}
+  {{ range (.Paginate $pages).Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     {{ .Summary }}
   {{ end }}

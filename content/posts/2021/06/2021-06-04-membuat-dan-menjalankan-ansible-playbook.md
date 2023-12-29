@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Membuat dan Menjalankan Ansible Playbook"
-categories: server
-tag: Ansible
----
++++
+title = 'Membuat dan Menjalankan Ansible Playbook'
+date = 2021-06-04T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Ansible']
++++
 
 Ansible dapat dijalankan menggunakan adhoc command untuk mengeksekusi one-time command dengan cepat. Akan tetapi, fitur unggulan ansible sesungguhnya terletak pada **playbook**. Ansible playbook dapat digunakan untuk menjalankan multiple tasks untuk banyak managed hosts sekaligus secara identik dan repeatable.
 

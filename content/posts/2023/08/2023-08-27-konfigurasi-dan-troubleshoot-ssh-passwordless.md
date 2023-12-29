@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Konfigurasi dan troubleshoot ssh passwordless"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Konfigurasi dan troubleshoot ssh passwordless'
+date = 2023-08-27T00:00:00Z
+draft = false
+categories = 'server'
+tags = ['Dasar Linux']
++++
 
 Biasanya ketika kita melakukan login ke dalam server, kita menggunakan kombinasi username dan password untuk authentikasi ke dalam server. Ada metode authentikasi lain yang dapat kita gunakan yaitu menggunakan _ssh keypair_. Metode ini menggunakan kombinasi SSH public dan private key sehingga kita tidak perlu menginput username dan password seperti sebelumnya, sehingga sering disebut juga sebagai _SSH Passwordless_.
 
@@ -86,30 +87,29 @@ Last login: Sun Aug 27 03:03:23 2023 from 192.168.64.14
 
 ## Troubleshoot SSH Passwordless
 Berikut beberapa contoh issue ketika setup ssh passwordless.
-
 - Tetap ada prompt password ketika ssh
-```
-[centos@svr01 ~]$ ssh centos@192.168.64.15
-centos@192.168.64.15's password:
-```
+    ```
+    [centos@svr01 ~]$ ssh centos@192.168.64.15
+    centos@192.168.64.15's password:
+    ```
 
     Beberapa kemungkinan solusi:
-
     Pastikan `PubkeyAuthentication` sudah di enable di file `/etc/ssh/sshd_config`
     ```
-[centos@svr02 ~]$ sudo grep PubkeyAuthentication /etc/ssh/sshd_config
-PubkeyAuthentication yes
+    [centos@svr02 ~]$ sudo grep PubkeyAuthentication /etc/ssh/sshd_config
+    PubkeyAuthentication yes
     ```
+
     Jika belum, aktifkan `PubkeyAuthentication` dan restart sshd
     ```
-[centos@svr02 ~]$ sudo systemctl restart sshd
+    [centos@svr02 ~]$ sudo systemctl restart sshd
     ```
 
     Selanjutnya pastikan folder `.ssh` hanya writable oleh user ownernya. Biasanya menggunakan permission 700.
     ```
-[centos@svr02 ~]$ chmod 700 .ssh
-[centos@svr02 ~]$ ls -ld .ssh
-drwx------ 2 centos centos 29 Aug 27 03:01 .ssh
+    [centos@svr02 ~]$ chmod 700 .ssh
+    [centos@svr02 ~]$ ls -ld .ssh
+    drwx------ 2 centos centos 29 Aug 27 03:01 .ssh
     ```
 
     Lalu pastikan juga file `.ssh/authorized_keys` mempunyai permission read and write oleh user ownernya. Biasanya menggunakan permission 600.
@@ -132,23 +132,24 @@ drwx------ 2 centos centos 29 Aug 27 03:01 .ssh
     drwxr-xr-x. 2 centos centos unconfined_u:object_r:ssh_home_t:s0   29 Aug 27 05:52 .
     drwx------. 3 centos centos system_u:object_r:user_home_dir_t:s0  95 Aug 27 05:52 ..
     -rw-------. 1 centos centos unconfined_u:object_r:ssh_home_t:s0  566 Aug 27 05:52 authorized_keys
-    ``` 
-<br>
+    ```
+
 - Muncul "WARNING: UNPROTECTED PRIVATE KEY FILE!" atau error bad permissions.
-```
-[centos@svr01 ~]$ ssh centos@192.168.64.15
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Permissions 0644 for '/home/centos/.ssh/id_rsa' are too open.
-It is required that your private key files are NOT accessible by others.
-This private key will be ignored.
-Load key "/home/centos/.ssh/id_rsa": bad permissions
-centos@192.168.64.15's password:
-```
-Pastikan private key `id_rsa` hanya bisa di read oleh user ownernya saja. Biasanya menggunakan permission 400 atau 600.
-```
-[centos@svr01 ~]$ chmod 400 .ssh/id_rsa
-[centos@svr01 ~]$ ls -l .ssh/id_rsa
--r-------- 1 centos centos 2602 Aug 27 02:49 .ssh/id_rsa
-```
+    ```
+    [centos@svr01 ~]$ ssh centos@192.168.64.15
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Permissions 0644 for '/home/centos/.ssh/id_rsa' are too open.
+    It is required that your private key files are NOT accessible by others.
+    This private key will be ignored.
+    Load key "/home/centos/.ssh/id_rsa": bad permissions
+    centos@192.168.64.15's password:
+    ```
+
+    Pastikan private key `id_rsa` hanya bisa di read oleh user ownernya saja. Biasanya menggunakan permission 400 atau 600.
+    ```
+    [centos@svr01 ~]$ chmod 400 .ssh/id_rsa
+    [centos@svr01 ~]$ ls -l .ssh/id_rsa
+    -r-------- 1 centos centos 2602 Aug 27 02:49 .ssh/id_rsa
+    ``` 

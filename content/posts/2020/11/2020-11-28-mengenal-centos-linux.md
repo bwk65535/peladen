@@ -1,8 +1,10 @@
----
-layout: post
-title:  "Mengenal Centos Linux"
-categories: server
----
++++
+title = 'Mengenal Centos Linux'
+date = 2020-11-28T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 Sistem operasi yang biasa disebut rpm-based bermula dari distro Fedora. Fedora juga merupakan distro berbasis komunitas yang mengedepankan inovasi dan integrasi teknologi baru ke dalam sistem. Red Hat menggunakan Fedora sebagai upstream source dari RHEL. Red Hat memberikan kontribusi pengembangan Fedora, mengambil package dari Fedora, dan melakukan enhancement sehingga dapat menjadi distro RHEL yang siap dipakai untuk enterprise.
 

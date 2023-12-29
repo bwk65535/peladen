@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Instalasi Red Hat OpenShift Local (CodeReady Containers)"
-categories: labs
-tag: "Container Orchestration"
----
++++
+title = 'Instalasi Red Hat OpenShift Local (CodeReady Containers)'
+date = 2023-03-18T00:00:00Z
+draft = false
+categories = 'labs'
+tags = ['OpenShift', 'Container Orchestration']
++++
 
 Red Hat Openshift Local atau sebelumnya disebut sebagai CodeReady Containers merupakan openshift cluster yang berjalan di single node. Openshift local digunakan untuk testing dan mengemulasi cluster openshift secara lokal. Openshift local sudah  menggunakan openshift versi 4, berbeda dengan minishift yang masih menggunakan versi 3.
 

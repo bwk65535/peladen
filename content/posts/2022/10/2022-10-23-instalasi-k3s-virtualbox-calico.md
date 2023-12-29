@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Instalasi k3s di Virtualbox dengan Calico CNI"
-categories: labs
-tag: "Container Orchestration"
----
++++
+title = 'Instalasi k3s di Virtualbox dengan Calico CNI'
+date = 2022-06-23T00:00:00Z
+draft = false
+categories = 'labs'
+tags = ['k3s', 'Container Orchestration']
++++
 
 K3s adalah salah satu distro kubernetes yang ditujukan untuk environment development, IoT, maupun untuk embedded devices karena penggunaan resourcenya yang lebih kecil. k3s di package dalam satu binary yang dapat di download sehingga dapat didistribusikan dan di deploy dengan mudah.
 

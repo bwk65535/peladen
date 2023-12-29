@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Menjalankan Ansible Ad hoc Command"
-categories: server
-tag: Ansible
----
++++
+title = 'Menjalankan Ansible Ad hoc Command'
+date = 2021-06-03T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Ansible']
++++
 
 Ansible adhoc command merupakan cara menjalankan command ansible secara cepat tanpa perlu membuat playbook. Misalnya kita perlu mengecek dengan cepat status dari beberapa server atau melakukan restart service mendadak untuk beberapa server maka kita bisa menjalankan adhoc command. Adhoc command memiliki beberapa keterbatasan dibandingkan dengan menggunakan playbook.
 
@@ -18,62 +19,62 @@ ansible host_pattern -m module [-a 'module arguments'] [-i invenory]
 
 Berikut beberapa contoh penggunaan adhoc command:
 - Melakukan "ping" ke semua managed host. Ping di sini bukanlah ICMP ping seperti di network, akan tetapi mengecek apakah managed host bisa diakses secara passwordless dan bisa menjalankan module berbasis python.
-```
-$ ansible -i inventory2 all -m ping
-web2.example.com | SUCCESS => {
-    "ansible_facts": {
-        "discovered_interpreter_python": "/usr/libexec/platform-python"
-    },
-    "changed": false,
-    "ping": "pong"
-}
-web1.example.com | SUCCESS => {
-    "ansible_facts": {
-        "discovered_interpreter_python": "/usr/libexec/platform-python"
-    },
-    "changed": false,
-    "ping": "pong"
-}
-db1.example.com | SUCCESS => {
-    "ansible_facts": {
-        "discovered_interpreter_python": "/usr/libexec/platform-python"
-    },
-    "changed": false,
-    "ping": "pong"
-}
-db2.example.com | SUCCESS => {
-    "ansible_facts": {
-        "discovered_interpreter_python": "/usr/libexec/platform-python"
-    },
-    "changed": false,
-    "ping": "pong"
-}
-```
+  ```
+  $ ansible -i inventory2 all -m ping
+  web2.example.com | SUCCESS => {
+      "ansible_facts": {
+          "discovered_interpreter_python": "/usr/libexec/platform-python"
+      },
+      "changed": false,
+      "ping": "pong"
+  }
+  web1.example.com | SUCCESS => {
+      "ansible_facts": {
+          "discovered_interpreter_python": "/usr/libexec/platform-python"
+      },
+      "changed": false,
+      "ping": "pong"
+  }
+  db1.example.com | SUCCESS => {
+      "ansible_facts": {
+          "discovered_interpreter_python": "/usr/libexec/platform-python"
+      },
+      "changed": false,
+      "ping": "pong"
+  }
+  db2.example.com | SUCCESS => {
+      "ansible_facts": {
+          "discovered_interpreter_python": "/usr/libexec/platform-python"
+      },
+      "changed": false,
+      "ping": "pong"
+  }
+  ```
 
 - Mengecek uptime dari managed hosts
-```
-$ ansible -i inventory2 all -m command -a 'uptime'
-db2.example.com | CHANGED | rc=0 >>
- 07:53:02 up 6 min,  1 user,  load average: 0.16, 0.13, 0.08
-db1.example.com | CHANGED | rc=0 >>
- 07:53:02 up 7 min,  1 user,  load average: 0.00, 0.09, 0.07
-web2.example.com | CHANGED | rc=0 >>
- 07:53:02 up 7 min,  1 user,  load average: 0.06, 0.09, 0.07
-web1.example.com | CHANGED | rc=0 >>
- 07:53:02 up 8 min,  1 user,  load average: 0.00, 0.06, 0.06
-```
+  ```
+  $ ansible -i inventory2 all -m command -a 'uptime'
+  db2.example.com | CHANGED | rc=0 >>
+  07:53:02 up 6 min,  1 user,  load average: 0.16, 0.13, 0.08
+  db1.example.com | CHANGED | rc=0 >>
+  07:53:02 up 7 min,  1 user,  load average: 0.00, 0.09, 0.07
+  web2.example.com | CHANGED | rc=0 >>
+  07:53:02 up 7 min,  1 user,  load average: 0.06, 0.09, 0.07
+  web1.example.com | CHANGED | rc=0 >>
+  07:53:02 up 8 min,  1 user,  load average: 0.00, 0.06, 0.06
+  ```
 - Mengecek ip address utama yang dimiliki managed hosts
-```
-$ ansible -i inventory2 all -m command -a 'hostname -I'
-web1.example.com | CHANGED | rc=0 >>
-10.0.2.15 192.168.56.112
-web2.example.com | CHANGED | rc=0 >>
-10.0.2.15 192.168.56.113
-db2.example.com | CHANGED | rc=0 >>
-10.0.2.15 192.168.56.115
-db1.example.com | CHANGED | rc=0 >>
-10.0.2.15 192.168.56.114
-```
+  ```
+  $ ansible -i inventory2 all -m command -a 'hostname -I'
+  web1.example.com | CHANGED | rc=0 >>
+  10.0.2.15 192.168.56.112
+  web2.example.com | CHANGED | rc=0 >>
+  10.0.2.15 192.168.56.113
+  db2.example.com | CHANGED | rc=0 >>
+  10.0.2.15 192.168.56.115
+  db1.example.com | CHANGED | rc=0 >>
+  10.0.2.15 192.168.56.114
+  ```
 
 ## Menjalankan ansible module dengan adhoc command
 Module merupakan tools yang digunakan ansible untuk mengerjakan task-task tertentu. Ansible menyediakan built-in modules yang memiliki beberapa fungsi berbeda. Selain itu kita juga bisa membuat module sendiri untuk digunakan dengan ansible. Kita bisa mengecek dokumentasi module melalui terminal dengan menggunakan command `ansible-doc`, misalnya:

@@ -2,8 +2,43 @@ baseURL = 'https://peladen.web.id/'
 languageCode = 'in'
 title = 'Peladen Blog'
 theme = 'simpel'
+paginate = 20
 
 [params]
   [params.author]
     email = 'dirtymanch@gmail.com'
     name = 'Manch Unian'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[[menus.main]]
+name = 'Categories'
+pageRef = '/categories'
+weight = 40
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 50
+
+[services]
+  [services.rss]
+    limit = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

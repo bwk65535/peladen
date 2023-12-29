@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Membuat Ansible Inventory"
-categories: server
-tag: Ansible
----
++++
+title = 'Membuat Ansible Inventory'
+date = 2021-06-01T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Ansible']
++++
 
 Ansible inventory merupakan suatu file yang berisi alamat host/alamat ip dari client yang akan dimanage. Beberapa alamat host dapat dibuat menjadi grup dan dimanage secara bersamaan. Suatu grup dapat berisi group lain dibawahnya dan suatu host dapat dimasukkan ke lebih dari satu grup. Di dalam inventory file kita juga dapat mengeset variable yang digunakan oleh host atau grup.
 

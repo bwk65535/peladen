@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Perangkat Jaringan"
-categories: jaringan
-tag: "Dasar Jaringan"
----
++++
+title = 'Perangkat Jaringan'
+date = 2019-08-12T00:00:00Z
+draft = false
+categories = 'Jaringan'
+tags = ['Dasar Jaringan']
++++
 
 ## Pengkabelan
 Ada dua macam tipe pengkabelan :

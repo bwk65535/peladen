@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Instalasi GNS3 VM di Virtualbox"
-categories: labs
-tag: GNS3
----
++++
+title = 'Instalasi GNS3 VM di Virtualbox'
+date = 2021-05-25T00:00:00Z
+draft = false
+categories = 'Labs'
+tags = ['GNS3']
++++
 
 [GNS3](https://www.gns3.com/) merupakan salah satu software simulasi jaringan yang banyak dipakai saat ini. Di dalamnya kita bisa menjalankan beberapa perangkat jaringan real seperti router, switch, firewall, server ataupun perangkat lainnya menggunakan teknologi virtualisasi. Kita bisa menggunakan software virtualisasi yang umum digunakan seperti virtualbox, qemu, dan dynamips.
 

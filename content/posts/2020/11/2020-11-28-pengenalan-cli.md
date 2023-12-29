@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Pengenalan Command Line Interface (CLI)"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Pengenalan Command Line Interface (CLI)'
+date = 2020-11-28T00:05:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 Di dalam menggunakan komputer, kita sebagai pengguna (user) membutuhkan antar muka (interface) untuk memberikan perintah atau instruksi ke dalam komputer. Bentuk interface yang banyak digunakan untuk mengkonfigurasi sebuah server adalah CLI (Command Line Interface) yang berbentuk teks (text based).
 Walaupun ada juga interface berbentuk grafis (Graphical User Interface), interface berbentuk CLI lebih banyak digunakan di server karena beberapa alasan berikut:
@@ -21,7 +22,7 @@ Ketika kita memulai shell, maka akan muncul prompt seperti berikut:
 
 Secara default, format tampilannya adalah `[username@hostname current_directory]$`. Tanda ~ merupakan home directory dari user tersebut. Pada contoh diatas, username-nya adalah centos, hostname-nya lptvm, dan current directory-nya ~ atau /home/centos.
 
-Tanda $ merupakan *shell prompt*, tempat di mana perintah atau command dapat kita inputkan secara interaktif. Prompt “$” merupakan prompt untuk regular user, sedangkan prompt “#” merupakan prompt untuk root user.
+Tanda $ merupakan *shell prompt*, tempat di mana perintah atau command dapat kita inputkan secara interaktif. Prompt "$" merupakan prompt untuk regular user, sedangkan prompt "#" merupakan prompt untuk root user.
 
 `[root@machine1 ~]#`
 

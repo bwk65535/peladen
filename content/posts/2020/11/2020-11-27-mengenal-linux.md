@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Mengenal Linux"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Mengenal Linux'
+date = 2020-11-27T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 ## Linux
 Linux merupakan sebuah kernel unix-like open source yang dibuat oleh Linus Torvald pada tahun 1991. Biasanya linux dipaketkan dengan beberapa utilitas lain sehingga menjadi sistem operasi yang lengkap. Linux yang telah dipaketkan tersebut disebut dengan linux distribution (distro). Ada banyak linux distro yang banyak dipakai saat ini, seperti red hat, centos, fedora, debian, ubuntu, dll. Masing-masing linux distro memiliki karakteristik tersendiri sesuai dengan tujuan dan ide awal distro tersebut dibuat.
