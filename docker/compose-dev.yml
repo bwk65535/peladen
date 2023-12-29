@@ -1,0 +1,18 @@
+version: "3"
+services:
+  hugo:
+    build:
+      context: ../.
+      dockerfile: docker/dev.Dockerfile
+    entrypoint: ["hugo", "server", "--bind=0.0.0.0", "--buildDrafts"]
+    # entrypoint: cat
+    image: v0latile/hugo:latest
+    ports:
+      - "1313:1313"
+    # tty: true
+    volumes:
+      - $PWD:/home/hugo/app
+      - hugo-cache:/tmp/hugo_cache
+
+volumes:
+  hugo-cache:
