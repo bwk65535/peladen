@@ -26,7 +26,7 @@ WORKDIR /home/hugo/app
 
 COPY --chown=hugo:hugo . .
 RUN set -eux \
-  && hugo
+  && hugo --gc --minify
 
 FROM nginxinc/nginx-unprivileged:alpine
 COPY --from=builder /home/hugo/app/public /usr/share/nginx/html
