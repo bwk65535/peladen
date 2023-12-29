@@ -1,0 +1,14 @@
+version: "3"
+services:
+  hugo:
+    build:
+      context: ../.
+      dockerfile: docker/build.Dockerfile
+    image: v0latile/peladen:latest
+    networks:
+      - peladen-net
+    ports:
+      - "8080:80"
+
+networks:
+  peladen-net:
