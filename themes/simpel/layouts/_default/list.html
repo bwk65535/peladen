@@ -2,7 +2,8 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+    <p><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p>
+    <!-- <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2> -->
+    <!-- {{ .Summary }} -->
   {{ end }}
 {{ end }}

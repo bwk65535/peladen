@@ -4,7 +4,7 @@ services:
     build:
       context: ../.
       dockerfile: docker/dev.Dockerfile
-    entrypoint: ["hugo", "server", "--bind=0.0.0.0", "--buildDrafts"]
+    entrypoint: ["hugo", "server", "--bind=0.0.0.0", "--buildDrafts", "--disableFastRender"]
     # entrypoint: cat
     image: v0latile/hugo:latest
     ports:

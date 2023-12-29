@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  margin: auto;
+}
+
 #simpel {
   text-align: center;
   margin-top: 0.2em;

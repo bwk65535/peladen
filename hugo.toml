@@ -2,3 +2,8 @@ baseURL = 'https://peladen.web.id/'
 languageCode = 'in'
 title = 'Peladen Blog'
 theme = 'simpel'
+
+[params]
+  [params.author]
+    email = 'dirtymanch@gmail.com'
+    name = 'Manch Unian'
