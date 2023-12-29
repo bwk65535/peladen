@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Konsep Dasar Jaringan Komputer"
-categories: jaringan
-tag: "Dasar Jaringan"
----
++++
+title = 'Konsep Dasar Jaringan Komputer'
+date = 2019-07-07T00:00:00Z
+draft = false
+categories = 'Jaringan'
+tags = ['Dasar Jaringan']
++++
 
 ## Pengertian Jaringan
 Jaringan adalah suatu kumpulan perangkat yang saling terhubung dan dapat melakukan komunikasi satu sama lain. Perangkat yang terhubung ke jaringan dapat berupa End Devices, seperti PC, Laptop, Smartphone, server, dll., maupun berupa Intermediary Devices, seperti router, switch, access point, dll.

@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Bash Shell Expansion"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Bash Shell Expansion'
+date = 2021-05-01T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 Bash shell mempunyai kemampuan untuk melakukan *expansion* atau perluasan/pengembangan dari suatu *pattern* di command line. Contoh yang paling banyak dipakai adalah kemampuan **globbing** yang biasa di pakai untuk melakukan *matching* beberapa name file sekaligus.
 

@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Pengenalan Ansible"
-categories: server
-tag: Ansible
----
++++
+title = 'Pengenalan Ansible'
+date = 2021-05-29T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Ansible']
++++
 
 Pada umumnya kita memanage server dengan cara manual, seperti memasukkan command melalui CLI atau melalui GUI. Server-server yang kita manage tersebut dikonfigurasi secara independen dan terpisah. Cara seperti ini memiliki beberapa kekurangan, misalnya:
 - Ada langkah-langkah yang terlupa atau salah memasukkan command.

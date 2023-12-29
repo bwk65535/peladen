@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Pengenalan Helm Charts"
-categories: server
-tag: "Helm Package Manager"
----
++++
+title = 'Pengenalan Helm Charts'
+date = 2022-06-01T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Helm Package Manager']
++++
 
 Helm merupakan salah satu automation tools yang bersifat *declarative*. Artinya kita sebagai operator cukup mendefinisikan *end state* atau hasil akhir yang diinginkan, lalu helm akan berusaha menjalankan step-step untuk mencapai end state tersebut. Definisi *end state* yang dijalankan helm akan kita tuliskan dalam bentuk **helm charts**.
 

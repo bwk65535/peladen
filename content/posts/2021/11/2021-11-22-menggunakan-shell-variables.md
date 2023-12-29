@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Menggunakan Shell Variables"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Menggunakan Shell Variables'
+date = 2021-11-22T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 Program shell seperti bash memungkinkan kita mengeset _shell variables_ untuk mengubah behaviour dari shell. Selain itu, _shell variables_ dapat kita export mejadi _environment variables_ sehingga bisa digunakan oleh program yang kita jalankan di shell tersebut.
 

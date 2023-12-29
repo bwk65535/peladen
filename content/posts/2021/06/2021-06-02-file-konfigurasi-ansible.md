@@ -1,9 +1,10 @@
----
-layout: post
-title:  "File Konfigurasi Ansible"
-categories: server
-tag: Ansible
----
++++
+title = 'File Konfigurasi Ansible'
+date = 2021-06-02T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Ansible']
++++
 
 Kita dapat merubah konfigurasi atau behaviour dari ansible menggunakan file konfigurasi ansible. Jika ada lebih dari satu file konfigurasi, ansible akan menggunakan file konfigurasi dengan prioritas sebagai berikut:
 - File yang dituju oleh environment variable `ANSIBLE_CONFIG`

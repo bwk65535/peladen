@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Konsep Routing"
-categories: jaringan
-tag: "Dasar Jaringan"
----
++++
+title = 'Konsep Routing'
+date = 2020-08-27T00:00:00Z
+draft = false
+categories = 'Jaringan'
+tags = ['Dasar Jaringan']
++++
 
 Routing dalam jaringan adalah proses mencari jalur terbaik dari satu alamat jaringan untuk menuju alamat jaringan yang lain. Pemilihan jalur terbaik dapat bergantung pada keinginan dari administrator jaringan, protokol routing yang dipergunakan, maupun kebijakan (policy) dari individu/perusahaan yang memiliki jaringan tersebut. 
 
@@ -94,6 +95,7 @@ Berbeda dengan static routing, pada dynamic routing kita cukup mengkonfigurasi n
 Jika ada perubahan pada network/route, maka administrator cukup melakukan perubahan/penambahan konfigurasi pada satu router saja yang terdapat perubahan tersebut. Router itu akan langsung menginformasikan perubahan yang terjadi ke router yang lain secara otomatis.
 
 Ada beberapa protokol routing dinamis yang tersedia, contohnya adalah RIP, OSPF, EIGRP, IS-IS, dan BGP. Masing-masing protokol memiliki karakteristik dan metode tersendiri untuk memilih jalur terbaik. Secara umum, protokol routing dinamis dapat dibagi menjadi:
+
 - Interior Gateway Protocol (IGP)<br>
 IGP digunakan di dalam jaringan yang berada di bawah satu Autonomous System (AS) yang sama. Atau dengan kata lain di bawah satu administrasi yang sama, misalnya jaringan internal suatu perusahaan. Contoh protokol routing IGP adalah RIP, OSPF, EIGRP dan IS-IS.
       
@@ -109,10 +111,11 @@ Protokol routing yang termasuk distance vector akan melakukan pemilihan rute ter
     ![distance-vector](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2020/08/distance-vector.png "distance-vector")
 
     Pada contoh di atas jika menggunakan distance vector, router R1 untuk menuju network di belakang R5 akan menggunakan jalur melewati R4 sebagai rute terbaiknya. R1 melihat jumlah hop (hop count) melewati R4 akan lebih kecil daripada melewati R2 - R3.
-```
-R1 --> R4 --> R5 = 2 hop count               --> terpilih sebagai best route
-R1 --> R2 --> R3 --> R5 = 3 hop count
-```      
+    ```
+    R1 --> R4 --> R5 = 2 hop count               --> terpilih sebagai best route
+    R1 --> R2 --> R3 --> R5 = 3 hop count
+    ```
+
 - Link-state<br>
 Pada protokol routing link-state, router akan mengumpulkan semua informasi alamat network tujuan, next-hop router, beserta informasi link antar router pada satu domain jaringan sehingga masing-masing router akan mengetahui topologi lengkap dari suatu jaringan. Selanjutnya router akan melakukan kalkulasi penghitungan jalur yang paling pendek untuk setiap network dari informasi tersebut.
       
@@ -121,10 +124,10 @@ Pada protokol routing link-state, router akan mengumpulkan semua informasi alama
     Pada contoh di atas jika menggunakan protokol routing link-state, router akan melakukan kalkulasi jalur terbaik untuk semua link berdasarkan cost. Cost yang dapat digunakan contohnya adalah besaran bandwidth pada tiap link. R1 memilih rute melewati R2 - R3 karena costnya lebih kecil dibandingkan jika melewati R4.
       
     Misal cost 1Gbps = 1 dan cost 100 Mbps = 10, maka
-```
-R1 --> R2 --> R3 --> R5 = 3          --> terpilih sebagai best route
-R1 --> R4 --> R5 = 20
-```
+    ```
+    R1 --> R2 --> R3 --> R5 = 3          --> terpilih sebagai best route
+    R1 --> R4 --> R5 = 20
+    ```
 - Hybrid<br>
 Protokol yang menggunakan cara kerja hybrid akan menggabungkan beberapa aspek dari distance vector dan link-state routing protocol. Sebagai contoh, EIGRP menggunakan distance untuk memilih jalur terbaik, tetapi ditambah dengan penghitungan beberapa kriteria lain, seperti bandwidth, load, delay, reliability dan MTU.
 

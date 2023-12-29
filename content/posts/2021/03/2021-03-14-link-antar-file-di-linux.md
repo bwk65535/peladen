@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Link antar file di Linux"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Link antar file di Linux'
+date = 2021-03-14T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 Pada sistem operasi linux, kita dapat membuat **link** atau suatu nama yang mereferensikan/menunjuk ke suatu file/direktori.
 

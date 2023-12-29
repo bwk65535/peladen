@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Pengenalan Helm"
-categories: server
-tag: "Helm Package Manager"
----
++++
+title = 'Pengenalan Helm'
+date = 2022-05-01T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Helm Package Manager']
++++
 
 Kubernetes merupakan container orchestration yang saat ini paling banyak digunakan. Dalam menggunakan kubernetes, ada banyak file manifest dalam format yaml yang harus kita manage. Untuk satu deployment app saja, bisa ada beberapa file yaml untuk objek-objek berikut:
 - Deployment

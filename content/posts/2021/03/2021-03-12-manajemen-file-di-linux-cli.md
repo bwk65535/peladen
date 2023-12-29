@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Manajemen file di Linux menggunakan CLI"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Manajemen file di Linux menggunakan CLI'
+date = 2021-03-12T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 CLI pada linux menyediakan beberapa perintah dasar yang dapat digunakan untuk mengelola file/folder.
 

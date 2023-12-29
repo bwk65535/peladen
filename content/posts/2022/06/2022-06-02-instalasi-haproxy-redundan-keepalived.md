@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Instalasi HAProxy Redundan dengan Keepalived"
-categories: labs
-tag: "Web"
----
++++
+title = 'Instalasi HAProxy Redundan dengan Keepalived'
+date = 2022-06-02T00:00:00Z
+draft = false
+categories = 'labs'
+tags = ['Web', 'Load Balancer']
++++
 
 Load balancing adalah salah satu metode untuk mendistribusikan trafik ke beberapa tujuan (*upstream*). Perangkat yang melakukan load balancing disebut sebagai **Load Balancer**. Load balancer berguna jika kita ingin membuat service/server kita *highly available* dengan cara membuat lebih dari satu instance server, lalu trafik dari client kita bagi ke beberapa server tersebut melalui load balancer. Load balancer dapat mendeteksi jika ada server di belakangnya yang mati dan mengalihkan trafik ke server yang masih menyala.
 

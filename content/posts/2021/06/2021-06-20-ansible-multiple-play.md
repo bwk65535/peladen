@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Ansible Multiple Plays"
-categories: server
-tag: Ansible
----
++++
+title = 'Ansible Multiple Plays'
+date = 2021-06-20T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Ansible']
++++
 
 Play di dalam ansible playbook merupakan sebuah list dengan format YAML. Berarti kita bisa memasukkan lebih dari satu play (multiple plays) di dalam sebuah playbook. Masing-masing play dapat kita gunakan untuk membuat task-task yang dapat di-apply ke managed host atau kumpulan dari managed host yang berbeda. Ini dapat memudahkan kita membuat playbook untuk mengorkestrasi deployment yang lebih kompleks.
 

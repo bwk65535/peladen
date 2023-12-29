@@ -1,9 +1,10 @@
----
-layout: post
-title:  "Menggunakan Environment Variables"
-categories: server
-tag: "Dasar Linux"
----
++++
+title = 'Menggunakan Environment Variables'
+date = 2021-11-23T00:00:00Z
+draft = false
+categories = 'Server'
+tags = ['Dasar Linux']
++++
 
 Berbeda dengan _shell variables_ yang hanya dapat digunakan oleh shell, _environment variables_ dapat digunakan oleh shell dan program yang dijalankan dari shell tersebut.
 
