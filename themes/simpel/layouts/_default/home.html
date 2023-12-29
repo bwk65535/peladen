@@ -1,7 +1,14 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ $pages := where .Site.RegularPages "Section" "posts" }}
+  {{ $pages = $pages.ByTitle }}
+  {{ range (.Paginate $pages 10).Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     {{ .Summary }}
   {{ end }}
+  {{ template "_internal/pagination.html" . }}
+  <!-- {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }} -->
 {{ end }}

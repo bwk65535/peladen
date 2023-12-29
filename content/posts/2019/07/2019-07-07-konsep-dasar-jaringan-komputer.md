@@ -1,9 +1,9 @@
-+++
-title = 'Konsep Dasar Jaringan Komputer'
-date = 2019-07-07T00:00:00Z
-draft = false
-tags = ['Dasar Jaringan']
-+++
+---
+layout: post
+title:  "Konsep Dasar Jaringan Komputer"
+categories: jaringan
+tag: "Dasar Jaringan"
+---
 
 ## Pengertian Jaringan
 Jaringan adalah suatu kumpulan perangkat yang saling terhubung dan dapat melakukan komunikasi satu sama lain. Perangkat yang terhubung ke jaringan dapat berupa End Devices, seperti PC, Laptop, Smartphone, server, dll., maupun berupa Intermediary Devices, seperti router, switch, access point, dll.
@@ -38,7 +38,6 @@ Hampir sama dengan topologi bus, bedanya perangkat yang berada di ujung topologi
 
 - Topologi Star
 Semua komputer terhubung ke perangkat sentral hub/switch sebagai penghubungnya, sehingga komputer yang ingin mengirim data harus mengirim ke hub/switch terlebih dahulu. Jaringan ini sudah menggunakan kabel UTP. Jika perangkat sentralnya mati, maka semua perangkat yang terhubung dengannya tidak dapat mengirim data.
-
 ![topologi star](https://res.cloudinary.com/peladen/image/upload/v1612739828/peladen/2019/07/star-topology.png "Topologi star")
 
 - Topologi Full Mesh
